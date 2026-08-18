@@ -80,3 +80,5 @@ const BusTracker = () => {
         </div>
     );
 };
+export default BusTracker;
+
