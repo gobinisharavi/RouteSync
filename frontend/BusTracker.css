@@ -1,0 +1,65 @@
+.tracker-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-dot.active {
+    background-color: #2ecc71;
+    box-shadow: 0 0 10px #2ecc71;
+    animation: blink 1.5s infinite;
+}
+
+.status-dot.inactive {
+    background-color: #e74c3c;
+}
+
+.button-group button {
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-start {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-stop {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.coordinates-display {
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+@keyframes blink {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
